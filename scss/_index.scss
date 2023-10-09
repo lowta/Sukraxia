@@ -1,0 +1,12 @@
+@mixin flex-wrap-justify {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.titulo-index {
+    @include flex-wrap-justify;
+    margin-top: 170px;
+    margin-bottom: 170px;
+}

@@ -1,0 +1,20 @@
+@mixin flex-wrap-justify {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@media (min-width: 576px) {
+    h1 {
+        justify-self: center;
+    }
+}
+
+@media (max-width: 576px) {
+    h1 {
+        @include flex-wrap-justify;
+        align-items: center;
+        width: 85%;
+    }
+}
