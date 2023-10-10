@@ -9,12 +9,45 @@
     h1 {
         justify-self: center;
     }
+
+    .menu-mobile {
+        display: none;
+    }
 }
 
 @media (max-width: 576px) {
     h1 {
         @include flex-wrap-justify;
-        align-items: center;
-        width: 85%;
+        text-align: center;
+        width: 450px;
     }
+
+    .nav-completa {
+        display: none;
+    }
+
+    footer {
+        flex-direction: column;
+        align-content: center;
+        margin-bottom: 20px;
+            .icono-mail {
+                width: 31px;
+            }
+    }
+}
+
+@media (min-width: 520px) {
+    footer {
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 640px){
+
+    .item-about {
+        @include flex-wrap-justify;
+        flex-wrap: wrap;
+        width: 65%;
+    } 
+
 }

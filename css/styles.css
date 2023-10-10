@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   font-family: "Young Serif", serif;
+  box-sizing: border-box;
 }
 
 .logo {
@@ -10,13 +11,19 @@
   margin: 0 auto;
 }
 
+li {
+  list-style: none;
+}
+
 h1 {
   font-size: 35px;
   width: 545px;
+  text-align: center;
 }
 
 a {
   text-decoration: none;
+  color: black;
 }
 
 .section-close {
@@ -32,6 +39,55 @@ a {
   background-color: transparent;
 }
 
+footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.icono-ig, .icono-linkedin {
+  padding-top: 2.5px;
+  width: 30px;
+}
+
+.icono-mail {
+  width: 35px;
+}
+
+.nav-completa {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  border: solid 1px black;
+  border-radius: 40px;
+  width: 450px;
+  margin: 10px auto;
+  position: sticky;
+}
+
+.nav-completa {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 3px;
+  gap: 15px;
+  width: 450px;
+}
+
+.item-completa {
+  margin-top: 5px;
+  font-size: 10px;
+  padding: 1px;
+  border: solid 1px black;
+  border-radius: 45px;
+  width: 70px;
+  height: 20px;
+  text-align: center;
+}
+
 .titulo-index {
   display: flex;
   flex-direction: row;
@@ -41,9 +97,19 @@ a {
   margin-bottom: 170px;
 }
 
+.item-about {
+  text-align: center;
+  margin: 0 auto;
+  font-size: 0.875rem;
+  width: 545px;
+}
+
 @media (min-width: 576px) {
   h1 {
     justify-self: center;
+  }
+  .menu-mobile {
+    display: none;
   }
 }
 @media (max-width: 576px) {
@@ -52,9 +118,38 @@ a {
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    width: 85%;
+    text-align: center;
+    width: 450px;
   }
+  .nav-completa {
+    display: none;
+  }
+  footer {
+    flex-direction: column;
+    align-content: center;
+    margin-bottom: 20px;
+  }
+  footer .icono-mail {
+    width: 31px;
+  }
+}
+@media (min-width: 520px) {
+  footer {
+    flex-direction: row;
+  }
+}
+@media (max-width: 640px) {
+  .item-about {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 65%;
+  }
+}
+.pasos {
+  background-color: transparent;
 }
 
 /*# sourceMappingURL=styles.css.map */

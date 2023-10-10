@@ -16,18 +16,50 @@
 
     <!---------------------------------------------------->
     
+    <!--AOS link-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!--Link Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
     <!--Link CSS-->
     <link rel="stylesheet" href="css/styles.css">
 
+    <!--My JS-->
+    <script src="js/script.js"></script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sukraxia</title>
 </head>
-<header>
 
+<header>
+    <div>
+        <ul class="nav-completa">
+            <li class="item-completa">
+                <a href="#">Inicio</a>
+            </li>
+
+            <li class="mb-1 item-completa">
+                <a class="enlaces" href="">Acerca de</a>
+            </li>
+
+            <li class="mb-1 item-completa">
+                <a class="enlaces" href="">Servicios</a>
+            </li>
+
+            <li class="mb-1 item-completa">
+                <a class="enlaces" href="">Testimonio</a>
+            </li>
+
+            <li class="item-completa">
+                <a class="enlaces" href="">FaQ</a>
+            </li>
+
+        </ul>
+    </div>
+
+<div class="menu-mobile">
     <a id="arriba" class="btn d-grid col-6 mx-auto justify-content-center align-items-center" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
         <img class="logo animate__animated animate__pulse" src="img/cropped-logo-sin-fondo-2-65x70.png" alt="LogoPage" class="d-grid mx-auto justify-content-center align-items-center">
     </a>
@@ -41,20 +73,20 @@
                     </button>
             </div>
         <div>
-            <ul>
-                <li class="mb-1">
+            <ul class="mobile">
+                <li class="mb-1 mobile">
                     <a class="enlaces" href="">Inicio</a>
                 </li>
     
-                <li class="mb-1">
+                <li class="mb-1 mobile">
                     <a class="enlaces" href="">Acerca de</a>
                 </li>
     
-                <li class="mb-1">
+                <li class="mb-1 mobile">
                     <a class="enlaces" href="">Servicios</a>
                 </li>
     
-                <li class="mb-1">
+                <li class="mb-1 mobile">
                     <a class="enlaces" href="">Testimonio</a>
                 </li>
     
@@ -65,27 +97,53 @@
         </div>
         </div>
     </div>       
+</div>
+
 </header>
+
 <body>
     <section class="titulo-index">
         <h1>Transformando conexiones en oportunidades de crecimiento.</h1>
     </section>
 
+    <section class="about">
+        <p class="item-about">En Sukraxia, generamos leads para empresas de software y TI, con el objetivo de convertirlos en clientes leales. Con un equipo de appointment setters y una estrategia de gestión en redes sociales, impulsamos un incremento en las reuniones de ventas, brindando a su vez posicionamiento de marca para nuestros clientes.</p>
+    </section>
+
+    <section class="titulo-index">
+        <h1>¿Como trabajamos en Sukraxia?</h1>
+
+        <div class="pasos" data-aos="fade-up">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores culpa modi, magnam soluta dolor maiores impedit. Blanditiis placeat in velit corporis? Tenetur adipisci dolorem, doloribus illum blanditiis libero explicabo. Cum!</p>
+        </div>
+
+    </section>
+
     <!--Link Jscipt-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script> 
+    AOS.init();
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
 <footer>
-    <i class="bi bi-linkedin">
-        <a href="https://ar.linkedin.com/company/sukraxia"></a>
-    </i>
+
+    <a href="https://ar.linkedin.com/company/sukraxia" target="_blank">
+        <img src="img/linkedin.svg" alt="Icono" class="icono-linkedin">
+    </a>
     
-    <a href="https://www.instagram.com/sukraxia/">
-        <i class="bi bi-instagram"></i>
+    <a href="https://www.instagram.com/sukraxia/" target="_blank">
+        <img src="img/instagram.svg" alt="Icono" class="icono-ig">
     </a>
 
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"> <title id="email"> Email </title> <path d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z"></path></svg>
+    <a href="mailto:sukraxia@gmail.com" target="_blank">
+        <img src="img/envelope.svg" alt="Icono" class="icono-mail">
+    </a>
 
 </footer>
 
 </body>
 </html>
+
+<!--Agregar menu sticky al index-->
+<!--Dar enfasis a los pasos como en pixelU-->
