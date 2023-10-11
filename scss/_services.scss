@@ -1,15 +1,67 @@
-@mixin flex-wrap-justify {
+@mixin flex-row-justify {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.titulo-servicios {
-    @include flex-wrap-justify;
-    margin: 70px auto;
+@mixin flex-column-justify {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.pasos {
-    background-color: transparent;
+$font-resto:'Poppins', sans-serif;
+
+.titulos-services {
+    @include flex-row-justify;
+    text-align: center;
+    margin: 170px auto;
+    font-size: 25px;
+    width: 85%;
+}
+
+.contenedor-padre {
+    @include flex-column-justify;
+    font-size: 12px;
+
+}
+
+.reverse {
+    text-align: right;
+    margin-right: 20px;
+}
+
+.contenedor, .reverse {
+    flex-direction: column-reverse;
+    margin-bottom: 50px;
+}
+
+.contenedor-services {
+    @include flex-column-justify;
+    margin: 70 auto;
+}
+
+.li-ol {
+    list-style-type: style;
+}
+
+.padre-ol {
+    @include flex-column-justify;
+    gap: 20px;
+}
+
+ .li-item {
+    list-style-type: disc;
+ }
+
+.ul-item {
+    @include flex-column-justify;
+    gap: 10px;
+}
+
+.p-item, .p-services, .li-item {
+    margin-left: 5px;
+    font-family: $font-resto;
 }

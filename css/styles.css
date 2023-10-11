@@ -120,6 +120,7 @@ footer {
     justify-content: center;
     text-align: center;
     width: 450px;
+    font-size: 25px;
   }
   .nav-completa {
     display: none;
@@ -148,16 +149,70 @@ footer {
     width: 65%;
   }
 }
-.titulo-servicios {
+.titulos-services {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 70px auto;
+  text-align: center;
+  margin: 170px auto;
+  font-size: 25px;
+  width: 85%;
 }
 
-.pasos {
-  background-color: transparent;
+.contenedor-padre {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: 12px;
+}
+
+.reverse {
+  text-align: right;
+  margin-right: 20px;
+}
+
+.contenedor, .reverse {
+  flex-direction: column-reverse;
+  margin-bottom: 50px;
+}
+
+.contenedor-services {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 70 auto;
+}
+
+.li-ol {
+  list-style-type: style;
+}
+
+.padre-ol {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.li-item {
+  list-style-type: disc;
+}
+
+.ul-item {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.p-item, .p-services, .li-item {
+  margin-left: 5px;
+  font-family: "Poppins", sans-serif;
 }
 
 /*# sourceMappingURL=styles.css.map */
