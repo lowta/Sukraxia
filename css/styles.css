@@ -148,6 +148,14 @@ footer {
     width: 65%;
   }
 }
+.titulo-servicios {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 70px auto;
+}
+
 .pasos {
   background-color: transparent;
 }

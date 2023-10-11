@@ -1,3 +1,15 @@
+@mixin flex-wrap-justify {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.titulo-servicios {
+    @include flex-wrap-justify;
+    margin: 70px auto;
+}
+
 .pasos {
     background-color: transparent;
 }
