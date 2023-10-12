@@ -1,0 +1,49 @@
+@mixin flex-column-justify {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+$font-tittle: 'Poppins', sans-serif;
+
+.contenedor-faq {
+    @include flex-column-justify;
+}
+
+.titulo-faq {
+    margin: 0 auto;
+    font-size: 25px;
+    font-family: $font-tittle;
+    text-align: center;
+    width: 85%;
+    margin-bottom: 20px;
+}
+
+.question {
+    justify-self: center;
+    text-align: center;
+    width: 85%;
+    margin: 0 auto;;
+    color: white;
+        &:hover {
+            color: blueviolet;
+        }
+}
+
+.card {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 13px;
+    background-color: black;
+    color: white;
+        &:hover {
+            color: blueviolet;
+        }
+}
+
+.li-faq {
+    list-style: style;
+    list-style-type: circle;
+    text-align: start;
+}

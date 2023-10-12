@@ -5,15 +5,24 @@
     justify-content: center;
 }
 
+$font-tittle:'Poppins', sans-serif;
+
 .titulo-index {
     @include flex-wrap-justify;
     margin-top: 170px;
     margin-bottom: 170px;
+    font-family: $font-tittle;
 }
 
 .item-about {
-    text-align: center;
     margin: 0 auto;
+    text-align: center;
     font-size: 14rem * 0.0625;
     width: 545px;
+    color: white;
+}
+
+.offcanvas-body, .offcanvas-title{
+    background-color: black;
+    color: white;
 }

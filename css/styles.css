@@ -1,8 +1,11 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Young Serif", serif;
   box-sizing: border-box;
+}
+
+body {
+  background-color: black;
 }
 
 .logo {
@@ -19,11 +22,12 @@ h1 {
   font-size: 35px;
   width: 545px;
   text-align: center;
+  color: white;
 }
 
 a {
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
 .section-close {
@@ -44,16 +48,12 @@ footer {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 30px;
+  gap: 10px;
 }
 
-.icono-ig, .icono-linkedin {
-  padding-top: 2.5px;
-  width: 30px;
-}
-
-.icono-mail {
-  width: 35px;
+.iconos {
+  font-size: 35px;
+  color: white;
 }
 
 .nav-completa {
@@ -88,6 +88,15 @@ footer {
   text-align: center;
 }
 
+header {
+  width: 100%;
+  position: absolute;
+  position: sticky;
+  top: 0;
+  z-index: 99999;
+  background-color: black;
+}
+
 .titulo-index {
   display: flex;
   flex-direction: row;
@@ -95,13 +104,20 @@ footer {
   justify-content: center;
   margin-top: 170px;
   margin-bottom: 170px;
+  font-family: "Poppins", sans-serif;
 }
 
 .item-about {
-  text-align: center;
   margin: 0 auto;
+  text-align: center;
   font-size: 0.875rem;
   width: 545px;
+  color: white;
+}
+
+.offcanvas-body, .offcanvas-title {
+  background-color: black;
+  color: white;
 }
 
 @media (min-width: 576px) {
@@ -158,6 +174,8 @@ footer {
   margin: 170px auto;
   font-size: 25px;
   width: 85%;
+  font-family: "Poppins", sans-serif;
+  color: white;
 }
 
 .contenedor-padre {
@@ -188,6 +206,8 @@ footer {
 
 .li-ol {
   list-style-type: style;
+  color: white;
+  width: 85%;
 }
 
 .padre-ol {
@@ -200,6 +220,7 @@ footer {
 
 .li-item {
   list-style-type: disc;
+  align-self: start;
 }
 
 .ul-item {
@@ -211,8 +232,65 @@ footer {
 }
 
 .p-item, .p-services, .li-item {
-  margin-left: 5px;
+  margin-left: 10px;
   font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+.btn {
+  margin: 0 auto;
+  color: white;
+}
+.btn:hover {
+  color: blueviolet;
+}
+
+.p-services {
+  text-align: start;
+}
+
+.contenedor-faq {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.titulo-faq {
+  margin: 0 auto;
+  font-size: 25px;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  width: 85%;
+  margin-bottom: 20px;
+}
+
+.question {
+  justify-self: center;
+  text-align: center;
+  width: 85%;
+  margin: 0 auto;
+  color: white;
+}
+.question:hover {
+  color: blueviolet;
+}
+
+.card {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 13px;
+  background-color: black;
+  color: white;
+}
+.card:hover {
+  color: blueviolet;
+}
+
+.li-faq {
+  list-style: style;
+  list-style-type: circle;
+  text-align: start;
 }
 
 /*# sourceMappingURL=styles.css.map */

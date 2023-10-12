@@ -5,13 +5,14 @@
     justify-content: center;
 }
 
-$font: 'Young Serif', serif;
-
 * {
     margin: 0;
     padding: 0;
-    font-family: $font;
     box-sizing: border-box;
+}
+
+body {
+    background-color: black;
 }
 
 .logo {
@@ -28,11 +29,12 @@ h1 {
     font-size: 35px;
     width: 545px;
     text-align: center;
+    color: white;
 }
 
 a {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 .section-close {
@@ -50,16 +52,12 @@ a {
 
 footer {
     @include flex-wrap-justify;
-    gap: 30px;
+    gap: 10px;
 }
 
-.icono-ig, .icono-linkedin {
-    padding-top: 2.5px;
-    width: 30px;
-}
-
-.icono-mail {
-    width: 35px;
+.iconos {
+    font-size: 35px;
+    color: white;
 }
 
 .nav-completa {
@@ -89,4 +87,13 @@ footer {
         width: 70px;
         height: 20px;
         text-align: center;
+}
+
+header {
+        width: 100%;
+        position: absolute;
+        position: sticky;
+        top: 0;
+        z-index: 99999;
+        background-color: black;
 }
