@@ -7,8 +7,13 @@
 
 $font-tittle: 'Poppins', sans-serif;
 
+#faq {
+    padding-top: 25px
+}
+
 .contenedor-faq {
     @include flex-column-justify;
+    margin-top: 20px;
 }
 
 .titulo-faq {

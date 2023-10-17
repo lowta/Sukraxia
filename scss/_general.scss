@@ -1,6 +1,13 @@
-@mixin flex-wrap-justify {
+@mixin flex-row-justify {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@mixin flex-column-justify {
+    display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -10,6 +17,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 
 body {
     background-color: black;
@@ -51,17 +59,22 @@ a {
 }
 
 footer {
-    @include flex-wrap-justify;
+    display: flex;
+    justify-content: center;
     gap: 10px;
+    margin: 0 auto;
 }
 
 .iconos {
     font-size: 35px;
     color: white;
+        &:hover {
+            color: blueviolet
+        }
 }
 
 .nav-completa {
-    @include flex-wrap-justify;
+    @include flex-row-justify;
     border: solid 1px black;
     border-radius: 40px;
     width: 450px;

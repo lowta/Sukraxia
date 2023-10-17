@@ -26,7 +26,7 @@ $font-resto: 'Poppins', sans-serif;
 
 .contenedor-padre{
     @include flex-column-justify;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .reverse {
@@ -41,13 +41,6 @@ $font-resto: 'Poppins', sans-serif;
 
 .contenedor-services {
     @include flex-column-justify;
-    margin: 70 auto;
-}
-
-.li-ol {
-    list-style-type: style;
-    color: white;
-    width: 85%;
 }
 
 .padre-ol {
@@ -55,30 +48,52 @@ $font-resto: 'Poppins', sans-serif;
     gap: 20px;
 }
 
-.li-item {
-    list-style-type: disc;
-    align-self: start
-}
-
 .ul-item {
     @include flex-column-justify;
     gap: 10px;
 }
 
-.p-item, .p-services, .li-item {
-    margin-left: 10px;
-    font-family: $font-resto;
+.p-item {
     color: white;
+    margin: 0px 10px;
 }
 
-.btn {
-    margin: 0 auto;
-    color: white;
+.btn-services {
+    margin: 0 auto 70px auto;
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 60%;
         &:hover {
-            color: blueviolet;
+            background-color: blueviolet;
+            color: white;
         }
 }
 
-.p-services {
-    text-align: start;
+.contenedor-services .p-oculto {
+        opacity: 0;
+        color: white;
+        transform: scale(0.9);
+        transition: .7s ease-in-out all;
+    }
+
+.contenedor-services p.visible {
+    opacity: 1;
+	transform: scale(1) translateX(-10px);
+    font-size: 14px;
+}
+
+.contenedor .p-oculto {
+        font-family: $font-resto;
+        opacity: 0;
+        color: white;
+        transform: scale(0.9);
+        transition: .7s ease-in-out all;
+}
+
+.contenedor li.visible {
+    list-style: circle;
+    font-size: 12px;
+    font-family: $font-resto;
+    opacity: 1;
+	transform: scale(1) translateX(-10px);
 }

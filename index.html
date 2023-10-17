@@ -31,7 +31,17 @@
     <link rel="stylesheet" href="css/styles.css">
 
     <!--My JS-->
-    <script src="js/script.js"></script>
+    <script>
+        function ShowAndHide() {
+            var x = document.getElementById('SectionName');
+            if (x.style.display == 'none') {
+                x.style.display = 'block';
+            } else {
+                x.style.display = 'none';
+            }
+        }
+    </script>
+    
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -111,10 +121,11 @@
         <h1>Transformando conexiones en oportunidades de crecimiento.</h1>
     </section>
 
-    <section class="about" id="acerca-de">
-        <p class="item-about">En Sukraxia, generamos leads para empresas de software y TI, con el objetivo de convertirlos en clientes leales. Con un equipo de appointment setters y una estrategia de gestión en redes sociales, impulsamos un incremento en las reuniones de ventas, brindando a su vez posicionamiento de marca para nuestros clientes.</p>
+<div id="acerca-de">
+    <section class="about">
+        <p class="item-about" id="typedtext"></p>
     </section>
-
+</div>
     <section class="contenedor-services position-relative z-9999" id="servicios">
         <h1 class="titulos-services">¿Como trabajamos en Sukraxia?</h1>
             
@@ -131,102 +142,54 @@
         </div>
 
         <div class="contenedor-padre" data-aos="fade-up">
-                <p class="p-item ">Metodologia de 5 pasos</p>
+                <p class="p-item">Metodologia de 5 pasos</p>
         </div>
 
-                <p class="d-inline-flex gap-1" >
-                    <a class="btn" data-aos="fade-up" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
-                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
-                        </svg>
-                    </a>
-                  </p>
-                  <div class="collapse" id="collapseExample">
-                    <div class="card card-body">
-                        <ol class="padre-ol" data-aos="fade-up" >
+        <button class="btn-services mt-5" data-aos="fade-up" ONCLICK="ShowAndHide()">Mas detalles</button>
+        <div class="contendor-services mt-4" id="SectionName" style="display:none">
+            <p class="ms-4 p-oculto" id="animado">1. Onboarding</p>
+                <ul class="contenedor">
+                    <li class="p-oculto ms-4" id="animado1">Ajuste de Perfil LinkedIn</li>
+                    <li class="p-oculto ms-4" id="animado2">Definicion del Buyer Persona</li>
+                </ul>
 
-                            <li class="li-ol">
-                                <p class="p-services">Onboarding</p>
-        
-                                <ul  class="ul-item">
-        
-                                    <li class="li-item" data-aos="zoom-in">Ajuste de Perfil LinkedIn</li>
-        
-                                    <li class="li-item" data-aos="zoom-in">Definicion del Buyer Persona</li>
-        
-                                </ul>
-                            </li>
-        
-                            <li class="li-ol" data-aos="fade-right">
-                                <p class="p-services">Estrategia</p>
-        
-                                <ul  class="ul-item">
-        
-                                    <li class="li-item" data-aos="zoom-in">Calendario de Contenido</li>
-        
-                                    <li class="li-item" data-aos="zoom-in">Campañas Personalizada</li>
-        
-                                </ul>
-        
-                            </li>
-        
-                            <li class="li-ol" data-aos="fade-right">
-                                <p class="p-services">Implementacion</p>
-        
-                                <ul  class="ul-item">
-        
-                                    <li class="li-item" data-aos="zoom-in">Lanzamiento de Campañas</li>
-        
-                                    <li class="li-item" data-aos="zoom-in">Seguimiento de Leads</li>
-        
-                                    <li class="li-item" data-aos="zoom-in">Monitoreo de Métricas</li>
-        
-                                </ul>
-        
-                            </li>
-        
-                            <li class="li-ol" data-aos="fade-right">
-                                <p class="p-services ">Optimizacion</p>
-        
-                                <ul  class="ul-item">
-        
-                                    <li class="li-item" data-aos="zoom-in">Ajuste de Buyer Persona</li>
-        
-                                    <li class="li-item" data-aos="zoom-in">Revision de Métricas</li>
-        
-                                    <li class="li-item" data-aos="zoom-in">Reuniones Quincenales</li>
-        
-                                </ul>
-        
-                            </li>
-        
-                            <li class="li-ol" data-aos="fade-right">
-                                <p class="p-services">Planificacion Futura</p>
-        
-                                <ul class="ul-item">
-        
-                                    <li class="li-item" data-aos="zoom-in">Evaluación de Objetivos</li>
-        
-                                    <li class="li-item" data-aos="zoom-in">Roadmap Estratégico</li>
-        
-                                    <li class="li-item" data-aos="zoom-in">Reunion de Cierre</li>
-        
-                                </ul>
-        
-                            </li>
-        
-                        </ol>
-                    </div>
-                  </div>
-        
+            <p class="ms-4 p-oculto" id="animado3">2. Estrategia</p>
+                <ul class="contenedor">
+                    <li class="p-oculto ms-4" id="animado4">Ajuste de Perfil LinkedIn</li>
+                    <li class="p-oculto ms-4" id="animado5">Definicion del Buyer Persona</li>
+                </ul>    
+            
+            <p class="ms-4 p-oculto" id="animado6">3. Implementacion</p>
+                <ul class="contenedor">
+                    <li class="p-oculto ms-4" id="animado7">Lanzamiento de Campañas</li>
+                    <li class="p-oculto ms-4" id="animado8">Seguimiento de Leads</li>
+                    <li class="p-oculto ms-4" id="animado9">Monitoreo de Métricas</li>
+                </ul> 
+                
+            <p class="ms-4 p-oculto" id="animado10">4. Optimizacion</p>
+                <ul class="contenedor">
+                    <li class="p-oculto ms-4" id="animado11">Ajuste de Buyer de Persona</li>
+                    <li class="p-oculto ms-4" id="animado12">Revisiones de Métricas</li>
+                    <li class="p-oculto ms-4" id="animado13">Reuniones Quincenales</li>
+                </ul> 
+
+            <p class="ms-4 p-oculto" id="animado14">5. Planificacion Futura</p>
+                <ul class="contenedor">
+                    <li class="p-oculto ms-4" id="animado15">Evaluacion de Objetivos</li>
+                    <li class="p-oculto ms-4" id="animado16">Roadmap Estratégico</li>
+                    <li class="p-oculto ms-4" id="animado17">Reunión de cierre</li>
+                </ul> 
         </div>
 
     </section>
 
-    <section class="contenedor-faq" id="faq">
+<div id="faq">
+    <section class="contenedor-faq" data-aos="fade-up" id="faq">
+
+        <h1 class="titulo-faq">FAQs</h1>
 
         <p class="d-inline-flex gap-1">
-            <a class="btn question" data-bs-toggle="collapse" href="#faq1" role="button" aria-expanded="false" aria-controls="faq1">¿Qué necesito para comenzar a trabajar con Sukraxia?</a>
+            <a class="btn mt-3 question" data-bs-toggle="collapse" href="#faq1" role="button" aria-expanded="false" aria-controls="faq1">¿Qué necesito para comenzar a trabajar con Sukraxia?</a>
         </p>
 
         <div class="row">
@@ -323,14 +286,18 @@
         </div>
 
     </section>
+</div>
 
     <!--Link Jscript-->
+    <script src="js/main.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script> 
     AOS.init();
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-
+    
 <footer>
 
     <a class="iconos" href="https://ar.linkedin.com/company/sukraxia" target="_blank">
@@ -360,4 +327,4 @@
 <!--ver de poner borde-->
 <!--ver vertical rule-->
 <!--ver toast-->
-<!--ver bordes del faq con color ya asignado-->
+<!--ver de acomodar los JS-->

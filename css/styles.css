@@ -45,15 +45,17 @@ a {
 
 footer {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
+  margin: 0 auto;
 }
 
 .iconos {
   font-size: 35px;
   color: white;
+}
+.iconos:hover {
+  color: blueviolet;
 }
 
 .nav-completa {
@@ -141,14 +143,6 @@ header {
   .nav-completa {
     display: none;
   }
-  footer {
-    flex-direction: column;
-    align-content: center;
-    margin-bottom: 20px;
-  }
-  footer .icono-mail {
-    width: 31px;
-  }
 }
 @media (min-width: 520px) {
   footer {
@@ -183,7 +177,7 @@ header {
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .reverse {
@@ -201,13 +195,6 @@ header {
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 70 auto;
-}
-
-.li-ol {
-  list-style-type: style;
-  color: white;
-  width: 85%;
 }
 
 .padre-ol {
@@ -218,11 +205,6 @@ header {
   gap: 20px;
 }
 
-.li-item {
-  list-style-type: disc;
-  align-self: start;
-}
-
 .ul-item {
   display: flex;
   flex-direction: column;
@@ -231,22 +213,53 @@ header {
   gap: 10px;
 }
 
-.p-item, .p-services, .li-item {
-  margin-left: 10px;
+.p-item {
+  color: white;
+  margin: 0px 10px;
+}
+
+.btn-services {
+  margin: 0 auto 70px auto;
+  border: 1px solid black;
+  border-radius: 20px;
+  width: 60%;
+}
+.btn-services:hover {
+  background-color: blueviolet;
+  color: white;
+}
+
+.contenedor-services .p-oculto {
+  opacity: 0;
+  color: white;
+  transform: scale(0.9);
+  transition: 0.7s ease-in-out all;
+}
+
+.contenedor-services p.visible {
+  opacity: 1;
+  transform: scale(1) translateX(-10px);
+  font-size: 14px;
+}
+
+.contenedor .p-oculto {
   font-family: "Poppins", sans-serif;
+  opacity: 0;
   color: white;
+  transform: scale(0.9);
+  transition: 0.7s ease-in-out all;
 }
 
-.btn {
-  margin: 0 auto;
-  color: white;
-}
-.btn:hover {
-  color: blueviolet;
+.contenedor li.visible {
+  list-style: circle;
+  font-size: 12px;
+  font-family: "Poppins", sans-serif;
+  opacity: 1;
+  transform: scale(1) translateX(-10px);
 }
 
-.p-services {
-  text-align: start;
+#faq {
+  padding-top: 25px;
 }
 
 .contenedor-faq {
@@ -254,6 +267,7 @@ header {
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
+  margin-top: 20px;
 }
 
 .titulo-faq {
@@ -291,6 +305,21 @@ header {
   list-style: style;
   list-style-type: circle;
   text-align: start;
+}
+
+#acerca-de {
+  padding-top: 10px;
+  margin: 0px auto;
+  margin-bottom: 170px;
+  font-family: "Poppins", sans-serif;
+}
+#acerca-de #typedtext {
+  font-size: 12px;
+  width: 85%;
+  text-align: center;
+}
+#acerca-de p {
+  margin-top: 130px;
 }
 
 /*# sourceMappingURL=styles.css.map */
