@@ -5,7 +5,7 @@
     justify-content: center;
 }
 
-$font-tittle:'Poppins', sans-serif;
+$font-tittle: 'Raleway', sans-serif;
 
 .titulo-index {
     @include flex-wrap-justify;
@@ -13,6 +13,7 @@ $font-tittle:'Poppins', sans-serif;
     margin-bottom: 170px;
     font-family: $font-tittle;
         h1 {
+            font-size: 25rem * 0.0625;
             background: radial-gradient(circle, rgba(128,103,247,1) 0%, rgba(28,48,233,1) 86%);
             -webkit-background-clip: text;
             color: transparent; 

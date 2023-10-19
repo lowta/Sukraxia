@@ -12,7 +12,8 @@
     justify-content: center;
 }
 
-$font-resto: 'Poppins', sans-serif;
+$font-title: 'Raleway', sans-serif;
+$font-resto: 'Asap', sans-serif;
 
 .titulos-services {
     @include flex-row-justify;
@@ -20,7 +21,7 @@ $font-resto: 'Poppins', sans-serif;
     margin: 170px auto;
     font-size: 25rem * 0.0625;
     width: 85%;
-    font-family: $font-resto;
+    font-family: $font-title;
     color: white
 }
 
@@ -56,20 +57,23 @@ $font-resto: 'Poppins', sans-serif;
 .p-item {
     color: white;
     margin: 0px 10px;
+    font-family: $font-title;
 }
 
 .btn-services {
+    font-family: $font-resto;
     margin: 0 auto 70px auto;
     border: 1px solid black;
     border-radius: 20px;
     width: 60%;
-        &:hover {
+        &:active {
             background-color: blueviolet;
             color: white;
         }
 }
 
 .contenedor-services .p-oculto {
+        font-family: $font-resto;
         opacity: 0;
         color: white;
         transform: scale(0.9);
@@ -79,7 +83,7 @@ $font-resto: 'Poppins', sans-serif;
 .contenedor-services p.visible {
     opacity: 1;
 	transform: scale(1) translateX(-10px);
-    font-size: 14rem * 0.0625;
+    font-size: 15rem * 0.0625;
 }
 
 .contenedor .p-oculto {
@@ -92,7 +96,7 @@ $font-resto: 'Poppins', sans-serif;
 
 .contenedor li.visible {
     list-style: circle;
-    font-size: 12rem * 0.0625;
+    font-size: 13rem * 0.0625;
     font-family: $font-resto;
     opacity: 1;
 	transform: scale(1) translateX(-10px);

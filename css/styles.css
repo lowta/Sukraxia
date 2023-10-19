@@ -18,13 +18,6 @@ li {
   list-style: none;
 }
 
-h1 {
-  font-size: 2.1875rem;
-  width: 545px;
-  text-align: center;
-  color: white;
-}
-
 a {
   text-decoration: none;
   color: white;
@@ -68,15 +61,9 @@ footer {
   width: 450px;
   margin: 10px auto;
   position: sticky;
-}
-
-.nav-completa {
-  display: flex;
-  justify-content: center;
   align-content: center;
   padding: 3px;
   gap: 15px;
-  width: 450px;
 }
 
 .item-completa {
@@ -106,9 +93,10 @@ header {
   justify-content: center;
   margin-top: 170px;
   margin-bottom: 170px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 .titulo-index h1 {
+  font-size: 1.5625rem;
   background: radial-gradient(circle, rgb(128, 103, 247) 0%, rgb(28, 48, 233) 86%);
   -webkit-background-clip: text;
   color: transparent;
@@ -127,12 +115,19 @@ header {
   color: white;
 }
 
-@media (min-width: 576px) {
-  h1 {
-    justify-self: center;
+@media (min-width: 575px) {
+  .titulo-index h1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   .menu-mobile {
     display: none;
+  }
+  .btn-services:hover {
+    background-color: blueviolet;
+    color: white;
   }
 }
 @media (max-width: 575px) {
@@ -173,7 +168,7 @@ header {
   margin: 170px auto;
   font-size: 1.5625rem;
   width: 85%;
-  font-family: "Poppins", sans-serif;
+  font-family: "Raleway", sans-serif;
   color: white;
 }
 
@@ -221,20 +216,23 @@ header {
 .p-item {
   color: white;
   margin: 0px 10px;
+  font-family: "Raleway", sans-serif;
 }
 
 .btn-services {
+  font-family: "Asap", sans-serif;
   margin: 0 auto 70px auto;
   border: 1px solid black;
   border-radius: 20px;
   width: 60%;
 }
-.btn-services:hover {
+.btn-services:active {
   background-color: blueviolet;
   color: white;
 }
 
 .contenedor-services .p-oculto {
+  font-family: "Asap", sans-serif;
   opacity: 0;
   color: white;
   transform: scale(0.9);
@@ -244,11 +242,11 @@ header {
 .contenedor-services p.visible {
   opacity: 1;
   transform: scale(1) translateX(-10px);
-  font-size: 0.875rem;
+  font-size: 0.9375rem;
 }
 
 .contenedor .p-oculto {
-  font-family: "Poppins", sans-serif;
+  font-family: "Asap", sans-serif;
   opacity: 0;
   color: white;
   transform: scale(0.9);
@@ -257,8 +255,8 @@ header {
 
 .contenedor li.visible {
   list-style: circle;
-  font-size: 0.75rem;
-  font-family: "Poppins", sans-serif;
+  font-size: 0.8125rem;
+  font-family: "Asap", sans-serif;
   opacity: 1;
   transform: scale(1) translateX(-10px);
 }
@@ -276,15 +274,17 @@ header {
 }
 
 .titulo-faq {
+  color: white;
   margin: 0 auto;
   font-size: 1.5625rem;
-  font-family: "Poppins", sans-serif;
+  font-family: "Raleway", sans-serif;
   text-align: center;
   width: 85%;
   margin-bottom: 20px;
 }
 
 .question {
+  font-family: "Raleway", sans-serif;
   justify-self: center;
   text-align: center;
   width: 85%;
@@ -296,6 +296,7 @@ header {
 }
 
 .card {
+  font-family: "Asap", sans-serif;
   margin: 0 auto;
   text-align: center;
   font-size: 0.8125rem;
@@ -316,10 +317,10 @@ header {
   padding-top: 10px;
   margin: 0px auto;
   margin-bottom: 170px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Asap", sans-serif;
 }
 #acerca-de #typedtext {
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   width: 85%;
   text-align: center;
 }

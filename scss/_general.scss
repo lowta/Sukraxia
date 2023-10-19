@@ -32,14 +32,6 @@ body {
 li {
     list-style: none;
 }
-
-h1 {
-    font-size: 35rem * 0.0625;
-    width: 545px;
-    text-align: center;
-    color: white;
-}
-
 a {
     text-decoration: none;
     color: white;
@@ -80,15 +72,9 @@ footer {
     width: 450px;
     margin: 10px auto;
     position: sticky;
-}
-
-.nav-completa {
-    display: flex;
-    justify-content: center;
     align-content: center;
     padding: 3px;
     gap: 15px;
-    width: 450px;
 }
     
 .item-completa {

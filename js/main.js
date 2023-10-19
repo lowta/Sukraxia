@@ -1,3 +1,12 @@
+function ShowAndHide() {
+    var x = document.getElementById('SectionName');
+    if (x.style.display == 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+
 // set up text to print, each item in array is new line
 var aText = new Array(
     "En Sukraxia, generamos leads para empresas de software y TI, con el objetivo de convertirlos en clientes leales. Con un equipo de appointment setters y una estrategia de gestión en redes sociales, impulsamos un incremento en las reuniones de ventas, brindando a su vez posicionamiento de marca para nuestros clientes."

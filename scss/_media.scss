@@ -1,23 +1,37 @@
-@mixin flex-wrap-justify {
+@mixin flex-column-justify {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-@media (min-width: 576px) {
-    h1 {
-        justify-self: center;
+@mixin flex-row-justify {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@media (min-width: 575px) {
+    .titulo-index h1 {
+        @include flex-row-justify;
     }
 
     .menu-mobile {
         display: none;
     }
+
+    .btn-services {
+        &:hover {
+            background-color: blueviolet;
+            color: white;
+        }
+    }
 }
 
 @media (max-width: 575px) {
     h1 {
-        @include flex-wrap-justify;
+        @include flex-column-justify;
         text-align: center;
         width: 450px;
         font-size: 25rem * 0.0625;
@@ -37,7 +51,7 @@
 @media (max-width: 640px){
 
     .item-about {
-        @include flex-wrap-justify;
+        @include flex-column-justify;
         flex-wrap: wrap;
         width: 65%;
     } 
