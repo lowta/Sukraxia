@@ -15,12 +15,12 @@
     }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 575px) {
     h1 {
         @include flex-wrap-justify;
         text-align: center;
         width: 450px;
-        font-size: 25px;
+        font-size: 25rem * 0.0625;
     }
 
     .nav-completa {

@@ -18,7 +18,7 @@ $font-resto: 'Poppins', sans-serif;
     @include flex-row-justify;
     text-align: center;
     margin: 170px auto;
-    font-size: 25px;
+    font-size: 25rem * 0.0625;
     width: 85%;
     font-family: $font-resto;
     color: white
@@ -26,7 +26,7 @@ $font-resto: 'Poppins', sans-serif;
 
 .contenedor-padre{
     @include flex-column-justify;
-    font-size: 14px;
+    font-size: 14rem 0.0625;
 }
 
 .reverse {
@@ -79,7 +79,7 @@ $font-resto: 'Poppins', sans-serif;
 .contenedor-services p.visible {
     opacity: 1;
 	transform: scale(1) translateX(-10px);
-    font-size: 14px;
+    font-size: 14rem * 0.0625;
 }
 
 .contenedor .p-oculto {
@@ -92,7 +92,7 @@ $font-resto: 'Poppins', sans-serif;
 
 .contenedor li.visible {
     list-style: circle;
-    font-size: 12px;
+    font-size: 12rem * 0.0625;
     font-family: $font-resto;
     opacity: 1;
 	transform: scale(1) translateX(-10px);

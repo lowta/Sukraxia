@@ -18,7 +18,7 @@ $font-tittle: 'Poppins', sans-serif;
 
 .titulo-faq {
     margin: 0 auto;
-    font-size: 25px;
+    font-size: 25rem * 0.0625;
     font-family: $font-tittle;
     text-align: center;
     width: 85%;
@@ -39,7 +39,7 @@ $font-tittle: 'Poppins', sans-serif;
 .card {
     margin: 0 auto;
     text-align: center;
-    font-size: 13px;
+    font-size: 13rem * 0.0625;
     background-color: black;
     color: white;
         &:hover {

@@ -2,7 +2,7 @@
 var aText = new Array(
     "En Sukraxia, generamos leads para empresas de software y TI, con el objetivo de convertirlos en clientes leales. Con un equipo de appointment setters y una estrategia de gestión en redes sociales, impulsamos un incremento en las reuniones de ventas, brindando a su vez posicionamiento de marca para nuestros clientes."
     );
-    var iSpeed = 50; // time delay of print out
+    var iSpeed = 20; // time delay of print out
     var iIndex = 0; // start printing array at this posision
     var iArrLength = aText[0].length; // the length of the text array
     var iScrollAt = 20; // start scrolling up at this many lines

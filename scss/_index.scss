@@ -12,6 +12,11 @@ $font-tittle:'Poppins', sans-serif;
     margin-top: 170px;
     margin-bottom: 170px;
     font-family: $font-tittle;
+        h1 {
+            background: radial-gradient(circle, rgba(128,103,247,1) 0%, rgba(28,48,233,1) 86%);
+            -webkit-background-clip: text;
+            color: transparent; 
+        }
 }
 
 .item-about {

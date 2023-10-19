@@ -19,7 +19,7 @@ li {
 }
 
 h1 {
-  font-size: 35px;
+  font-size: 2.1875rem;
   width: 545px;
   text-align: center;
   color: white;
@@ -39,7 +39,7 @@ a {
   height: 30px;
   width: 30px;
   border: none;
-  font-size: 15px;
+  font-size: 0.9375rem;
   background-color: transparent;
 }
 
@@ -51,7 +51,7 @@ footer {
 }
 
 .iconos {
-  font-size: 35px;
+  font-size: 2.1875rem;
   color: white;
 }
 .iconos:hover {
@@ -81,7 +81,7 @@ footer {
 
 .item-completa {
   margin-top: 5px;
-  font-size: 10px;
+  font-size: 10rem 0.0625;
   padding: 1px;
   border: solid 1px black;
   border-radius: 45px;
@@ -108,6 +108,11 @@ header {
   margin-bottom: 170px;
   font-family: "Poppins", sans-serif;
 }
+.titulo-index h1 {
+  background: radial-gradient(circle, rgb(128, 103, 247) 0%, rgb(28, 48, 233) 86%);
+  -webkit-background-clip: text;
+  color: transparent;
+}
 
 .item-about {
   margin: 0 auto;
@@ -130,7 +135,7 @@ header {
     display: none;
   }
 }
-@media (max-width: 576px) {
+@media (max-width: 575px) {
   h1 {
     display: flex;
     flex-direction: column;
@@ -138,7 +143,7 @@ header {
     justify-content: center;
     text-align: center;
     width: 450px;
-    font-size: 25px;
+    font-size: 1.5625rem;
   }
   .nav-completa {
     display: none;
@@ -166,7 +171,7 @@ header {
   justify-content: center;
   text-align: center;
   margin: 170px auto;
-  font-size: 25px;
+  font-size: 1.5625rem;
   width: 85%;
   font-family: "Poppins", sans-serif;
   color: white;
@@ -177,7 +182,7 @@ header {
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
-  font-size: 14px;
+  font-size: 14rem 0.0625;
 }
 
 .reverse {
@@ -239,7 +244,7 @@ header {
 .contenedor-services p.visible {
   opacity: 1;
   transform: scale(1) translateX(-10px);
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 
 .contenedor .p-oculto {
@@ -252,7 +257,7 @@ header {
 
 .contenedor li.visible {
   list-style: circle;
-  font-size: 12px;
+  font-size: 0.75rem;
   font-family: "Poppins", sans-serif;
   opacity: 1;
   transform: scale(1) translateX(-10px);
@@ -272,7 +277,7 @@ header {
 
 .titulo-faq {
   margin: 0 auto;
-  font-size: 25px;
+  font-size: 1.5625rem;
   font-family: "Poppins", sans-serif;
   text-align: center;
   width: 85%;
@@ -293,7 +298,7 @@ header {
 .card {
   margin: 0 auto;
   text-align: center;
-  font-size: 13px;
+  font-size: 0.8125rem;
   background-color: black;
   color: white;
 }
@@ -314,7 +319,7 @@ header {
   font-family: "Poppins", sans-serif;
 }
 #acerca-de #typedtext {
-  font-size: 12px;
+  font-size: 0.75rem;
   width: 85%;
   text-align: center;
 }
